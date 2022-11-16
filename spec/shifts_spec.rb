@@ -28,4 +28,20 @@ RSpec.describe Shift do
   it 'can calculate d shift' do
     expect(@shift.d_shift).to eq(51)
   end
+
+  it 'can calculate the mirror shift of a shift' do
+    expect(@shift.mirror_shift(0)).to eq(@shift.a_shift)
+  end
+
+  it 'can calculate the mirror shift of b shift' do
+    expect(@shift.mirror_shift(1)).to eq(@shift.b_shift)
+  end
+
+  it 'can calculate the mirror shift of c shift' do
+    expect(@shift.mirror_shift(2)).to eq(@shift.c_shift)
+  end
+
+  it 'can calculate the mirror shift of d shift' do 
+    expect(@shift.mirror_shift(3)).to eq(@shift.d_shift)
+  end
 end
