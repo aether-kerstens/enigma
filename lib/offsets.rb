@@ -11,6 +11,6 @@ class Offsets
   end
 
   def self.current_date
-    Date.today.strftime('%D')
+    Date::today.strftime('%d%m%y')
   end
 end
