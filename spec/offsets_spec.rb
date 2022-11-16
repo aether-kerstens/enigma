@@ -1,3 +1,5 @@
+require 'date'
+require './lib/enigma'
 require './lib/offsets'
 
 RSpec.describe Offsets do
